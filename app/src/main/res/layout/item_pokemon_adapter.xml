@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="recyclerPokedexData"
+            type="com.dio.octaviolportugal.mypokedex.data.model.Pokemons" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:elevation="20dp">
+
+        <ImageView
+            android:id="@+id/img_pokemon_item"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_name_item"
+            app:layout_constraintStart_toEndOf="@id/img_pokemon_item"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:inputType="textCapSentences"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+
